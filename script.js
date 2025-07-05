@@ -284,4 +284,21 @@ if ('serviceWorker' in navigator) {
                 console.log('SW registration failed: ', registrationError);
             });
     });
+}
+
+// Modal open/close logic
+const openModalBtn = document.getElementById('open-modal-btn');
+const modalOverlay = document.getElementById('modal-overlay');
+const modalClose = document.getElementById('modal-close');
+
+if (openModalBtn && modalOverlay && modalClose) {
+  openModalBtn.onclick = function() {
+    modalOverlay.style.display = 'flex';
+  };
+  modalClose.onclick = function() {
+    modalOverlay.style.display = 'none';
+  };
+  modalOverlay.onclick = function(e) {
+    if (e.target === modalOverlay) modalOverlay.style.display = 'none';
+  };
 } 
