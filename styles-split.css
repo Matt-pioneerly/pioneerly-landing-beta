@@ -439,4 +439,12 @@ h2.main-headline.gradient-headline {
 }
 .brand-link:hover {
   color: #ff416c;
-} 
+} .modal-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    background: rgba(20, 16, 32, 0.85);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
