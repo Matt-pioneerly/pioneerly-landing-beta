@@ -403,4 +403,8 @@ body {
     margin-bottom: 1.5rem;
     margin-top: 0.1rem;
     text-align: left;
+}
+
+.form-container {
+    max-width: 500px !important;
 } 
