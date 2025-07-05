@@ -429,4 +429,14 @@ body {
 
 h2.main-headline.gradient-headline {
   margin-bottom: 1rem !important;
+}
+
+.brand-link {
+  color: #7748cd;
+  text-decoration: underline;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+.brand-link:hover {
+  color: #ff416c;
 } 
