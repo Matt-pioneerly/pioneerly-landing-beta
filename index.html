@@ -4,70 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pioneerly - Revolutionising Legal Firm Growth</title>
-    <link rel="stylesheet" href="styles-split.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="split-container">
-        <!-- Left Content -->
-        <section class="split-left">
+    <div class="background-overlay"></div>
+    
+    <main class="container">
+        <!-- Header -->
+        <header class="header">
             <div class="logo">
-                <a href="https://www.pioneerly.com" target="_blank" rel="noopener noreferrer">
-                    <img src="pioneerly-logo.svg" alt="Pioneerly Logo" class="logo-img" style="height: 64px;" />
-                </a>
+                <img src="pioneerly-logo.png" alt="Pioneerly Logo" class="logo-img" />
+                <a href="https://www.pioneerly.com" target="_blank" rel="noopener noreferrer" class="logo-link">Pioneerly</a>
             </div>
-            <h2 class="main-headline gradient-headline" style="margin-bottom: 0.7rem;">Revolutionising Legal Firm Growth</h2>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <h2 class="main-headline">Revolutionising Legal Firm Growth</h2>
             <p class="subheadline">The growth accelerator for law firms - leveraging tech, AI, and strategic expertise</p>
-            <div class="benefits-list">
-                <div class="benefit-row"><span class="benefit-icon gradient-icon">🚀</span><span>Reduce Agency Reliance</span></div>
-                <div class="benefit-row"><span class="benefit-icon gradient-icon">⚖️</span><span>Focus on Providing Expert Legal Services</span></div>
-                <div class="benefit-row"><span class="benefit-icon gradient-icon">💡</span><span>Eliminate the Risk of Burnout</span></div>
-                <div class="benefit-row"><span class="benefit-icon gradient-icon">📈</span><span>Improve Operational Efficiency</span></div>
-                <div class="benefit-row"><span class="benefit-icon gradient-icon">🤖</span><span>Integrate AI Into Your Marketing & Growth Operations</span></div>
-                <div class="benefit-row"><span class="benefit-icon gradient-icon">🎯</span><span>Leverage Cutting-Edge Legal Marketing Expertise</span></div>
-            </div>
-            <div class="final-line">
-                Finally, Adopt a Growth Strategy That Delivers With Repeatability
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="benefits">
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🚀</div>
+                    <h3>Reduce Reliance on Agencies</h3>
+                    <p>Take control of your growth strategy with our comprehensive platform</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚖️</div>
+                    <h3>Focus on Core Legal Activities</h3>
+                    <p>Streamline operations to concentrate on what matters most - your legal practice</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💡</div>
+                    <h3>Reduce Lawyer Burnout</h3>
+                    <p>Efficient growth strategies that don't compromise work-life balance</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">📈</div>
+                    <h3>Accelerated Growth</h3>
+                    <p>Measurable, controllable and sustainable growth for your firm</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🤖</div>
+                    <h3>Tech & AI-Powered</h3>
+                    <p>Cutting-edge technology and AI-driven growth strategies</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎯</div>
+                    <h3>Specialized Expertise</h3>
+                    <p>Deep knowledge across all legal sectors and practice areas</p>
+                </div>
             </div>
         </section>
-        <!-- Right Content -->
-        <section class="split-right">
-            <div class="image-overlay"></div>
-            <div class="form-container">
-                <h3 class="cta-headline gradient-headline">Join the Waitlist</h3>
-                <div class="cta-subhead">Get early access and unlock the growth of your practice</div>
-                <button class="join-beta-btn" id="open-modal-btn">Join the Waitlist</button>
-                <p class="form-note">Have an invitation code? Click <a href="/" class="brand-link">here</a>.</p>
-            </div>
-            <svg class="growth-lines" width="100%" height="100%">
-                <line x1="10%" y1="90%" x2="90%" y2="10%" stroke="#ff416c" stroke-width="2" opacity="0.08"/>
-                <line x1="20%" y1="100%" x2="100%" y2="20%" stroke="#7748cd" stroke-width="2" opacity="0.08"/>
-                <line x1="0%" y1="80%" x2="80%" y2="0%" stroke="#d740a6" stroke-width="2" opacity="0.08"/>
-            </svg>
-        </section>
-    </div>
-    <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; 2024 Pioneerly. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="#" class="footer-link">Privacy Policy</a>
-                <a href="#" class="footer-link">Terms of Service</a>
-                <a href="mailto:hello@pioneerly.com" class="footer-link">Contact</a>
-            </div>
-        </div>
-    </footer>
-    <div id="modal-overlay" class="modal-overlay" style="display:none;">
-        <div class="modal-content">
-            <span class="modal-close" id="modal-close">&times;</span>
-            <h3>Join the Waitlist</h3>
-            <form id="modalForm">
-                <input type="email" name="email" placeholder="Enter your email address" required class="modal-input" />
-                <button type="submit" class="join-beta-btn">Join the Waitlist</button>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <h2 class="cta-headline">Join the Beta - Transform Your Firm's Growth</h2>
+            <p class="cta-subtitle">Be among the first to experience the future of legal firm growth</p>
+            
+            <!-- Replace the form below with your Contact Form 7 shortcode in WordPress/Elementor -->
+            <!-- [contact-form-7 id="efb74e5" title="Beta Signup"] -->
+            <form class="email-form" id="betaForm">
+                <div class="form-group">
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="Enter your email address" 
+                        required
+                        class="email-input"
+                    >
+                    <button type="submit" class="submit-btn">
+                        <span>Join Beta</span>
+                        <div class="btn-gradient"></div>
+                    </button>
+                </div>
+                <p class="form-note">We'll notify you when the beta launches</p>
             </form>
-        </div>
-    </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2024 Pioneerly. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link">Terms of Service</a>
+                    <a href="mailto:hello@pioneerly.com" class="footer-link">Contact</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html> 
