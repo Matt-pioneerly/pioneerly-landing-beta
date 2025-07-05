@@ -177,10 +177,13 @@ body {
     box-shadow: 0 8px 32px 0 rgba(119, 72, 205, 0.18);
     border: 2.5px solid;
     border-image: linear-gradient(135deg, #7748cd 0%, #d740a6 50%, #f54e5a 100%) 1;
-    padding: 2rem;
-    max-width: 400px;
+    padding: 2.5rem 2rem 2rem 2rem;
+    max-width: 500px;
     margin: 0 auto;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
 }
 
 .form-container h3 {
@@ -387,7 +390,7 @@ body {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.1rem;
     margin-top: 0;
     text-align: left;
     display: inline-block;
@@ -398,6 +401,6 @@ body {
     color: #e0d7f7;
     font-weight: 500;
     margin-bottom: 1.5rem;
-    margin-top: 0.2rem;
+    margin-top: 0.1rem;
     text-align: left;
 } 
