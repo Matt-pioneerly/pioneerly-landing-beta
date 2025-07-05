@@ -63,6 +63,7 @@ body {
     color: #666;
     margin-bottom: 1.5rem;
     max-width: 500px;
+    margin-top: 0.1rem;
 }
 
 .benefits-list {
@@ -427,5 +428,5 @@ body {
 }
 
 h2.main-headline.gradient-headline {
-  margin-bottom: 2.2rem !important;
+  margin-bottom: 1rem !important;
 } 
