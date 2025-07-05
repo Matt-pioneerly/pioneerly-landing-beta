@@ -178,7 +178,8 @@ body {
     border: 2.5px solid;
     border-image: linear-gradient(135deg, #7748cd 0%, #d740a6 50%, #f54e5a 100%) 1;
     padding: 2.5rem 2rem 2rem 2rem;
-    max-width: 500px;
+    max-width: 540px !important;
+    width: 100%;
     margin: 0 auto;
     color: #fff;
     display: flex;
@@ -405,6 +406,4 @@ body {
     text-align: left;
 }
 
-.form-container {
-    max-width: 500px !important;
-} 
+.form-container { max-width: 540px !important; width: 100% !important; } 
