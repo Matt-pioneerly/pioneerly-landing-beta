@@ -187,6 +187,10 @@ body {
     margin-top: 0;
 }
 
+.form-container h3.cta-headline {
+    margin-bottom: 1.5rem;
+}
+
 .form-note {
     color: #ccc;
     font-size: 0.9rem;
@@ -301,20 +305,24 @@ body {
 }
 
 .join-beta-btn {
-    background: linear-gradient(90deg, #ff4b2b 0%, #ff416c 100%);
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    padding: 0.75em 2em;
+    height: 48px;
+    padding: 0 2em;
     font-size: 1.1em;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(90deg, #7748cd 0%, #ff416c 100%);
+    color: #fff;
     font-weight: bold;
     cursor: pointer;
     transition: background 0.3s, box-shadow 0.3s;
     box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .join-beta-btn:hover {
-    background: linear-gradient(90deg, #ff416c 0%, #ff4b2b 100%);
+    background: linear-gradient(90deg, #ff416c 0%, #7748cd 100%);
     box-shadow: 0 4px 16px rgba(0,0,0,0.18);
 }
 
@@ -338,4 +346,30 @@ body {
 .logo-link:hover {
     opacity: 0.7;
     text-decoration: underline;
+}
+
+.final-line {
+    margin-top: 2.5rem;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #7748cd;
+    letter-spacing: -0.5px;
+    text-shadow: 0 2px 8px rgba(119, 72, 205, 0.08);
+}
+
+.email-form .form-group {
+    display: flex;
+    gap: 0.7rem;
+    align-items: stretch;
+}
+
+.email-input {
+    flex: 1;
+    padding: 0 1em;
+    font-size: 1.1em;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    height: 48px;
+    box-sizing: border-box;
 } 
