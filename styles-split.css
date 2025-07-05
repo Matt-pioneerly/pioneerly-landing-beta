@@ -321,6 +321,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
 }
 
 .join-beta-btn:hover {
@@ -363,10 +364,12 @@ body {
     display: flex;
     gap: 0.7rem;
     align-items: stretch;
+    flex-wrap: nowrap;
 }
 
 .email-input {
-    flex: 1;
+    flex: 1 1 0;
+    min-width: 0;
     padding: 0 1em;
     font-size: 1.1em;
     border-radius: 8px;
@@ -384,9 +387,10 @@ body {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
-    margin-bottom: 0.7rem;
+    margin-bottom: 0.2rem;
     margin-top: 0;
     text-align: left;
+    display: inline-block;
 }
 
 .cta-subhead {
@@ -394,6 +398,6 @@ body {
     color: #e0d7f7;
     font-weight: 500;
     margin-bottom: 1.5rem;
-    margin-top: -0.5rem;
+    margin-top: 0.2rem;
     text-align: left;
 } 
