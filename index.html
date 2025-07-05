@@ -10,98 +10,62 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="background-overlay"></div>
-    
-    <main class="container">
-        <!-- Header -->
-        <header class="header">
+    <div class="split-container">
+        <!-- Left Content -->
+        <section class="split-left">
             <div class="logo">
-                <img src="pioneerly-logo.png" alt="Pioneerly Logo" class="logo-img" />
                 <a href="https://www.pioneerly.com" target="_blank" rel="noopener noreferrer" class="logo-link">Pioneerly</a>
             </div>
-        </header>
-
-        <!-- Hero Section -->
-        <section class="hero">
             <h2 class="main-headline">Revolutionising Legal Firm Growth</h2>
             <p class="subheadline">The growth accelerator for law firms - leveraging tech, AI, and strategic expertise</p>
-        </section>
-
-        <!-- Benefits Section -->
-        <section class="benefits">
-            <div class="benefits-grid">
-                <div class="benefit-card">
-                    <div class="benefit-icon">🚀</div>
-                    <h3>Reduce Reliance on Agencies</h3>
-                    <p>Take control of your growth strategy with our comprehensive platform</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">⚖️</div>
-                    <h3>Focus on Core Legal Activities</h3>
-                    <p>Streamline operations to concentrate on what matters most - your legal practice</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">💡</div>
-                    <h3>Reduce Lawyer Burnout</h3>
-                    <p>Efficient growth strategies that don't compromise work-life balance</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">📈</div>
-                    <h3>Accelerated Growth</h3>
-                    <p>Measurable, controllable and sustainable growth for your firm</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">🤖</div>
-                    <h3>Tech & AI-Powered</h3>
-                    <p>Cutting-edge technology and AI-driven growth strategies</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">🎯</div>
-                    <h3>Specialized Expertise</h3>
-                    <p>Deep knowledge across all legal sectors and practice areas</p>
-                </div>
+            <div class="benefits-list">
+                <div class="benefit-row"><span class="benefit-icon gradient-icon">🚀</span><span>Reduce Agency Reliance</span></div>
+                <div class="benefit-row"><span class="benefit-icon gradient-icon">⚖️</span><span>Focus on Providing Expert Legal Services</span></div>
+                <div class="benefit-row"><span class="benefit-icon gradient-icon">💡</span><span>Eliminate the Risk of Burnout</span></div>
+                <div class="benefit-row"><span class="benefit-icon gradient-icon">📈</span><span>Improve Operational Efficiency</span></div>
+                <div class="benefit-row"><span class="benefit-icon gradient-icon">🤖</span><span>Integrate AI Into Your Marketing & Growth Operations</span></div>
+                <div class="benefit-row"><span class="benefit-icon gradient-icon">🎯</span><span>Leverage Cutting-Edge Legal Marketing Expertise</span></div>
+                <div class="benefit-row no-icon"><span class="benefit-icon"></span><span>Finally, Adopt a Growth Strategy That Delivers With Repeatability</span></div>
             </div>
         </section>
-
-        <!-- CTA Section -->
-        <section class="cta-section">
-            <h2 class="cta-headline">Join the Beta - Transform Your Firm's Growth</h2>
-            <p class="cta-subtitle">Be among the first to experience the future of legal firm growth</p>
-            
-            <!-- Replace the form below with your Contact Form 7 shortcode in WordPress/Elementor -->
-            <!-- [contact-form-7 id="efb74e5" title="Beta Signup"] -->
-            <form class="email-form" id="betaForm">
-                <div class="form-group">
-                    <input 
-                        type="email" 
-                        id="email" 
-                        name="email" 
-                        placeholder="Enter your email address" 
-                        required
-                        class="email-input"
-                    >
-                    <button type="submit" class="submit-btn">
-                        <span>Join Beta</span>
-                        <div class="btn-gradient"></div>
-                    </button>
-                </div>
-                <p class="form-note">We'll notify you when the beta launches</p>
-            </form>
-        </section>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="footer-content">
-                <p>&copy; 2024 Pioneerly. All rights reserved.</p>
-                <div class="footer-links">
-                    <a href="#" class="footer-link">Privacy Policy</a>
-                    <a href="#" class="footer-link">Terms of Service</a>
-                    <a href="mailto:hello@pioneerly.com" class="footer-link">Contact</a>
-                </div>
+        <!-- Right Content -->
+        <section class="split-right">
+            <div class="image-overlay"></div>
+            <div class="form-container">
+                <h3 class="cta-headline">Join the Beta - Transform Your Firm's Growth</h3>
+                <!-- Replace the form below with your Contact Form 7 shortcode in WordPress/Elementor -->
+                <!-- [contact-form-7 id="efb74e5" title="Beta Signup"] -->
+                <form class="email-form" id="betaForm">
+                    <div class="form-group">
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="Enter your email address" 
+                            required
+                            class="email-input"
+                        >
+                        <button type="submit" class="submit-btn">
+                            <span>Join Beta</span>
+                            <div class="btn-gradient"></div>
+                        </button>
+                    </div>
+                    <p class="form-note">We'll notify you when the beta launches</p>
+                </form>
             </div>
-        </footer>
-    </main>
-
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Abstract Legal" class="abstract-bg" />
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Pioneerly. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Privacy Policy</a>
+                <a href="#" class="footer-link">Terms of Service</a>
+                <a href="mailto:hello@pioneerly.com" class="footer-link">Contact</a>
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html> 
