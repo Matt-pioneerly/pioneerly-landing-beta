@@ -177,16 +177,16 @@ body {
     box-shadow: 0 8px 32px 0 rgba(119, 72, 205, 0.18);
     border: 2.5px solid;
     border-image: linear-gradient(135deg, #7748cd 0%, #d740a6 50%, #f54e5a 100%) 1;
-    padding: 2.5rem 2rem 2rem 2rem;
+    padding: 2.2rem 2rem 1.2rem 2rem;
     max-width: 540px !important;
     width: 100%;
     margin: 0 auto;
     color: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: stretch;
+    min-height: 240px !important;
     gap: 1.1rem;
-    min-height: 340px !important;
 }
 
 .form-container h3 {
@@ -406,18 +406,6 @@ body {
     margin-bottom: 0.7rem !important;
     margin-top: 0.05rem !important;
     text-align: left;
-}
-
-.form-container {
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: stretch !important;
-    min-height: 340px !important;
-    max-width: 540px !important;
-    width: 100% !important;
-    padding: 2.5rem 2rem 2rem 2rem !important;
-    gap: 1.1rem !important;
 }
 
 .gradient-headline {
