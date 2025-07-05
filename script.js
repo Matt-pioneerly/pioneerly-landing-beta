@@ -287,13 +287,20 @@ if ('serviceWorker' in navigator) {
 }
 
 // Modal open/close logic
-document.getElementById('open-modal-btn').onclick = function() {
-  document.getElementById('modal-overlay').style.display = 'flex';
-};
-document.getElementById('modal-close').onclick = function() {
-  document.getElementById('modal-overlay').style.display = 'none';
-};
-// Optional: close modal when clicking outside the modal content
-document.getElementById('modal-overlay').onclick = function(e) {
-  if (e.target === this) this.style.display = 'none';
-}; 
+window.addEventListener('DOMContentLoaded', function() {
+  var openModalBtn = document.getElementById('open-modal-btn');
+  var modalOverlay = document.getElementById('modal-overlay');
+  var modalClose = document.getElementById('modal-close');
+
+  if (openModalBtn && modalOverlay && modalClose) {
+    openModalBtn.onclick = function() {
+      modalOverlay.style.display = 'flex';
+    };
+    modalClose.onclick = function() {
+      modalOverlay.style.display = 'none';
+    };
+    modalOverlay.onclick = function(e) {
+      if (e.target === modalOverlay) modalOverlay.style.display = 'none';
+    };
+  }
+}); 
