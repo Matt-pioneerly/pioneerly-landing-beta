@@ -14,7 +14,7 @@
         <!-- Left Content -->
         <section class="split-left">
             <div class="logo">
-                <a href="https://www.pioneerly.com" target="_blank" rel="noopener noreferrer" class="logo-link">Pioneerly</a>
+                <a href="https://www.pioneerly.com" class="logo-link" target="_blank" rel="noopener noreferrer">Pioneerly</a>
             </div>
             <h2 class="main-headline">Revolutionising Legal Firm Growth</h2>
             <p class="subheadline">The growth accelerator for law firms - leveraging tech, AI, and strategic expertise</p>
@@ -34,10 +34,9 @@
         <section class="split-right">
             <div class="image-overlay"></div>
             <div class="form-container">
-                <h3 class="cta-headline">Join the Beta - Transform Your Firm's Growth</h3>
-                <!-- Replace the form below with your Contact Form 7 shortcode in WordPress/Elementor -->
-                <!-- [contact-form-7 id="efb74e5" title="Beta Signup"] -->
-                <form class="email-form" id="betaForm">
+                <h3 class="cta-headline gradient-headline">Join the Beta</h3>
+                <div class="cta-subhead">Transform Your Firm's Growth</div>
+                <form class="email-form" id="betaForm" action="https://formspree.io/f/yourformid" method="POST">
                     <div class="form-group">
                         <input 
                             type="email" 
@@ -53,6 +52,9 @@
                     </div>
                     <p class="form-note">We'll notify you when the beta launches</p>
                 </form>
+                <div id="thankYouMessage" style="display:none; color:#fff; margin-top:1rem;">
+                    Thank you for signing up! We'll be in touch soon.
+                </div>
             </div>
             <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Abstract Legal" class="abstract-bg" />
         </section>
@@ -68,5 +70,3 @@
         </div>
     </footer>
     <script src="script.js"></script>
-</body>
-</html> 
