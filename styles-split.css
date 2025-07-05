@@ -424,4 +424,8 @@ body {
     margin-bottom: 0.7rem !important;
     margin-top: 0.05rem !important;
     text-align: left !important;
+}
+
+h2.main-headline.gradient-headline {
+  margin-bottom: 1.5rem !important;
 } 
