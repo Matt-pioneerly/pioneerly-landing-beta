@@ -298,4 +298,34 @@ body {
     .logo-text {
         font-size: 1.05rem;
     }
+}
+
+.join-beta-btn {
+    background: linear-gradient(90deg, #ff4b2b 0%, #ff416c 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75em 2em;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+.join-beta-btn:hover {
+    background: linear-gradient(90deg, #ff416c 0%, #ff4b2b 100%);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+}
+
+.logo-link {
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.logo-link:hover {
+    text-decoration: underline;
 } 
