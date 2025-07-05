@@ -37,7 +37,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.5rem;
 }
 
 .logo-text {
@@ -427,5 +427,5 @@ body {
 }
 
 h2.main-headline.gradient-headline {
-  margin-bottom: 1.5rem !important;
+  margin-bottom: 2.2rem !important;
 } 
