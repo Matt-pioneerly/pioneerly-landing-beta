@@ -305,6 +305,8 @@ body {
 }
 
 .join-beta-btn {
+    min-width: 120px;
+    white-space: nowrap;
     height: 48px;
     padding: 0 2em;
     font-size: 1.1em;
@@ -327,9 +329,9 @@ body {
 }
 
 .logo-link {
-    font-size: 2.5rem;
-    font-weight: 700;
-    background: linear-gradient(135deg, #7748cd 0%, #d740a6 50%, #f54e5a 100%);
+    font-size: 3.2rem;
+    font-weight: 800;
+    background: linear-gradient(90deg, #7748cd 0%, #d740a6 60%, #ff416c 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -372,4 +374,26 @@ body {
     outline: none;
     height: 48px;
     box-sizing: border-box;
+}
+
+.gradient-headline {
+    font-size: 2rem;
+    font-weight: 800;
+    background: linear-gradient(90deg, #7748cd 0%, #d740a6 60%, #ff416c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-bottom: 0.7rem;
+    margin-top: 0;
+    text-align: left;
+}
+
+.cta-subhead {
+    font-size: 1.15rem;
+    color: #e0d7f7;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    margin-top: -0.5rem;
+    text-align: left;
 } 
