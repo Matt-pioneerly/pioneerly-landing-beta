@@ -184,7 +184,9 @@ body {
     color: #fff;
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    justify-content: center;
+    gap: 1.1rem;
+    min-height: 340px;
 }
 
 .form-container h3 {
@@ -391,7 +393,7 @@ body {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
-    margin-bottom: 0.1rem;
+    margin-bottom: 0.05rem;
     margin-top: 0;
     text-align: left;
     display: inline-block;
@@ -401,8 +403,8 @@ body {
     font-size: 1.15rem;
     color: #e0d7f7;
     font-weight: 500;
-    margin-bottom: 1.5rem;
-    margin-top: 0.1rem;
+    margin-bottom: 0.7rem;
+    margin-top: 0.05rem;
     text-align: left;
 }
 
