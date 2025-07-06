@@ -45,4 +45,34 @@ window.addEventListener('DOMContentLoaded', function() {
       showModal(true);
     };
   }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  var modalForm = document.getElementById('modalForm');
+  var modal = document.querySelector('.modal');
+  var thankYouMessage = document.createElement('div');
+  thankYouMessage.innerHTML = "<h3>Thank you!</h3><p>Your submission has been received.</p>";
+  thankYouMessage.style.textAlign = "center";
+  thankYouMessage.style.color = "#fff";
+
+  if (modalForm) {
+    modalForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var formData = new FormData(modalForm);
+      fetch('https://formspree.io/f/mldnkwvb', {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      }).then(function(response) {
+        if (response.ok) {
+          modalForm.style.display = 'none';
+          modal.appendChild(thankYouMessage);
+        } else {
+          alert('There was a problem submitting your form.');
+        }
+      }).catch(function() {
+        alert('There was a problem submitting your form.');
+      });
+    });
+  }
 }); 
