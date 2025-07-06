@@ -51,9 +51,11 @@ document.addEventListener('DOMContentLoaded', function() {
   var modalForm = document.getElementById('modalForm');
   var modal = document.querySelector('.modal');
   var thankYouMessage = document.createElement('div');
-  thankYouMessage.innerHTML = "<h3>Thank you!</h3><p>Your submission has been received.</p>";
-  thankYouMessage.style.textAlign = "center";
-  thankYouMessage.style.color = "#fff";
+  thankYouMessage.innerHTML = `
+    <h3 style="margin-bottom: 0.7em; font-size: 2rem; font-weight: 800; color: #ff416c; background: none; -webkit-background-clip: unset; -webkit-text-fill-color: unset; background-clip: unset; text-fill-color: unset; text-align: center;">You're In!</h3>
+    <div style="font-size: 1.05rem; color: #fff; text-align: center; margin-bottom: 0.5em; font-weight: 400;">We'll be in touch soon with exciting updates.</div>
+    <div style="font-size: 0.95rem; color: #ccc; text-align: center; font-weight: 400;">Your submission has been received.</div>
+  `;
 
   if (modalForm) {
     modalForm.addEventListener('submit', function(e) {
