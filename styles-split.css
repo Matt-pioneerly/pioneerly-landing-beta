@@ -439,12 +439,105 @@ h2.main-headline.gradient-headline {
 }
 .brand-link:hover {
   color: #ff416c;
-} .modal-overlay {
-    position: fixed;
-    top: 0; left: 0; width: 100vw; height: 100vh;
-    background: rgba(20, 16, 32, 0.85);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  background: rgba(20, 16, 32, 0.85);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #1a1333;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(40, 16, 64, 0.25);
+  padding: 2.5rem 2rem 2rem 2rem;
+  max-width: 400px;
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  position: relative;
+  animation: modal-fade-in 0.3s;
+}
+
+@keyframes modal-fade-in {
+  from { transform: translateY(40px) scale(0.98); opacity: 0; }
+  to { transform: translateY(0) scale(1); opacity: 1; }
+}
+
+.modal-close {
+  position: absolute;
+  top: 1.1rem;
+  right: 1.1rem;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  z-index: 10;
+}
+.modal-close:hover {
+  opacity: 1;
+}
+
+.modal h3 {
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+  font-size: 1.45rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #7748cd 0%, #ff416c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-align: center;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.modal-form input[type="text"],
+.modal-form input[type="email"] {
+  padding: 0.9em 1em;
+  border-radius: 8px;
+  border: none;
+  font-size: 1.08em;
+  background: #2a1a44;
+  color: #fff;
+  box-shadow: 0 1px 4px rgba(40,16,64,0.07);
+  outline: none;
+  transition: box-shadow 0.2s, background 0.2s;
+}
+.modal-form input[type="text"]:focus,
+.modal-form input[type="email"]:focus {
+  background: #32205a;
+  box-shadow: 0 2px 8px #7748cd33;
+}
+
+.modal-form .join-beta-btn {
+  margin-top: 0.5rem;
+  width: 100%;
+  font-size: 1.15em;
+  padding: 0.9em 0;
+  border-radius: 8px;
+}
+
+@media (max-width: 500px) {
+  .modal {
+    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+    max-width: 98vw;
   }
+  .modal h3 {
+    font-size: 1.1rem;
+  }
+}
