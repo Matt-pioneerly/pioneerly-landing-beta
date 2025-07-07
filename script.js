@@ -107,6 +107,9 @@ document.addEventListener('DOMContentLoaded', function() {
     var hasShownExitIntent = localStorage.getItem('exitIntentShown');
     var mouseY = 0;
     var hasTriggered = false;
+    var exitIntentCTA = document.getElementById('exit-intent-cta');
+    var openModalBtn = document.getElementById('open-modal-btn');
+    var modalOverlay = document.getElementById('modal-overlay');
 
     // Track mouse movement
     document.addEventListener('mousemove', function(e) {
@@ -200,6 +203,15 @@ document.addEventListener('DOMContentLoaded', function() {
                     document.body.style.overflow = 'auto';
                 }
             }, 3000);
+        });
+    }
+
+    // Handle CTA button to open registration modal
+    if (exitIntentCTA) {
+        exitIntentCTA.addEventListener('click', function() {
+            if (exitIntentOverlay) exitIntentOverlay.style.display = 'none';
+            document.body.style.overflow = 'auto';
+            if (modalOverlay) modalOverlay.style.display = 'flex';
         });
     }
 
