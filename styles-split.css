@@ -621,10 +621,25 @@ h2.main-headline.gradient-headline {
     text-align: center;
 }
 
+.exit-intent-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+
 .exit-intent-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    background: linear-gradient(135deg, #f3e8fd 0%, #fbeaf5 100%);
+    box-shadow: 0 4px 24px rgba(119,72,205,0.13);
+    color: #d740a6;
+    filter: drop-shadow(0 2px 8px rgba(119, 72, 205, 0.10));
 }
 
 .exit-intent-headline {
@@ -648,12 +663,19 @@ h2.main-headline.gradient-headline {
     font-weight: 500;
 }
 
-.exit-intent-value {
-    background: linear-gradient(135deg, #7748cd 0%, #d740a6 50%, #f54e5a 100%);
-    border-radius: 12px;
-    padding: 0.8rem 1.5rem;
-    margin-bottom: 2rem;
+.exit-intent-value-pill {
     display: inline-block;
+    margin: 0 auto 2rem auto;
+    padding: 0.6rem 1.6rem;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #7748cd 0%, #d740a6 60%, #ff416c 100%);
+    color: #fff;
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    box-shadow: 0 2px 8px rgba(119, 72, 205, 0.10);
+    text-align: center;
+    border: none;
 }
 
 .value-text {
