@@ -8,6 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
 </head>
 <body>
     <div class="split-container">
@@ -76,25 +85,7 @@
             </form>
         </div>
     </div>
-    <div id="exit-intent-overlay" class="exit-intent-overlay">
-        <div class="exit-intent-modal">
-            <button class="exit-intent-close" id="exit-intent-close">&times;</button>
-            <div class="exit-intent-content">
-                <div class="exit-intent-icon-wrapper">
-                    <span class="exit-intent-icon">🎯</span>
-                </div>
-                <h3 class="exit-intent-headline">Wait! Don't Miss This Exclusive Offer</h3>
-                <p class="exit-intent-message">
-                    The First 100 People to Sign Up to Our Waitlist Get a Free Growth Consultation From One of Our Founders.
-                </p>
-                <span class="exit-intent-value-pill">Worth $3,000</span>
-                <button class="submit-btn" id="exit-intent-cta" type="button">
-                    <span>Join the Waitlist</span>
-                </button>
-                <p class="exit-intent-note">Limited time offer - Join now to secure your spot!</p>
-            </div>
-        </div>
-    </div>
+
     <script src="script.js"></script>
 </body>
 </html> 
