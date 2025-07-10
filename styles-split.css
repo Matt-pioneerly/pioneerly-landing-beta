@@ -278,6 +278,20 @@ body {
     .form-container {
         margin: 2rem auto 0 auto;
     }
+    .main-headline {
+        text-align: center !important;
+        width: 100%;
+    }
+    .split-left {
+        display: flex;
+        flex-direction: column;
+    }
+    .mobile-move-up {
+        order: 1;
+    }
+    .benefits-list {
+        order: 2;
+    }
 }
 
 @media (max-width: 600px) {
