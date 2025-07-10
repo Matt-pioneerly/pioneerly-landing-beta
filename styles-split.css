@@ -246,52 +246,29 @@ body {
     }
 }
 
+@media (min-width: 901px) {
+  .split-left {
+    display: flex;
+    flex-direction: column;
+  }
+  .benefits-list {
+    order: 1;
+  }
+  .mobile-move-up {
+    order: 2;
+  }
+}
 @media (max-width: 900px) {
-    .split-container {
-        flex-direction: column;
-        height: auto;
-    }
-    .split-left, .split-right {
-        width: 100vw;
-        min-height: unset;
-        height: auto;
-        padding: 2.5rem 1rem;
-    }
-    .split-left {
-        align-items: center;
-        text-align: center;
-        padding: 2.5rem 1rem 1.5rem 1rem;
-    }
-    .logo {
-        align-items: center;
-    }
-    .benefits-list {
-        align-items: center;
-    }
-    .benefit-row {
-        justify-content: center;
-    }
-    .split-right {
-        min-height: 350px;
-        padding: 2.5rem 1rem 2rem 1rem;
-    }
-    .form-container {
-        margin: 2rem auto 0 auto;
-    }
-    .main-headline {
-        text-align: center !important;
-        width: 100%;
-    }
-    .split-left {
-        display: flex;
-        flex-direction: column;
-    }
-    .mobile-move-up {
-        order: 1;
-    }
-    .benefits-list {
-        order: 2;
-    }
+  .split-left {
+    display: flex;
+    flex-direction: column;
+  }
+  .mobile-move-up {
+    order: 1;
+  }
+  .benefits-list {
+    order: 2;
+  }
 }
 
 @media (max-width: 600px) {
