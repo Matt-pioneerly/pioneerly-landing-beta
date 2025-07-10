@@ -261,15 +261,12 @@ body {
         align-items: center;
         text-align: center;
         padding: 2.5rem 1rem 1.5rem 1rem;
-        display: flex;
-        flex-direction: column;
     }
     .logo {
         align-items: center;
     }
     .benefits-list {
         align-items: center;
-        order: 2;
     }
     .benefit-row {
         justify-content: center;
@@ -280,11 +277,6 @@ body {
     }
     .form-container {
         margin: 2rem auto 0 auto;
-        order: 1;
-    }
-    .main-headline {
-        text-align: center !important;
-        width: 100%;
     }
 }
 
@@ -549,3 +541,4 @@ h2.main-headline.gradient-headline {
     font-size: 1.1rem;
   }
 }
+
