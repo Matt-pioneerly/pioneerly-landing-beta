@@ -1,92 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pioneerly - Revolutionizing Legal Firm Growth</title>
-    <link rel="stylesheet" href="styles-split.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H3YS8BWG2Q"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-H3YS8BWG2Q');
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flux Analysis: Cross-Chain Crypto Investigation Tool | Scorechain</title>
+  <meta name="description" content="Trace suspicious crypto funds across 20+ blockchains in seconds. Scorechain's Flux Analysis shows complete fund flows and risk distances for faster AML investigations.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="scorechain-landing.css">
 </head>
 <body>
-    <div class="split-container">
-        <!-- Left Content -->
-        <section class="split-left">
-            <div class="logo">
-                <a href="https://www.pioneerly.com" target="_blank" rel="noopener noreferrer">
-                    <img src="pioneerly-logo.svg" alt="Pioneerly Logo" class="logo-img" style="height: 64px;" />
-                </a>
-            </div>
-            <h2 class="main-headline gradient-headline" style="margin-bottom: 0.7rem;">Revolutionising Legal Firm Growth</h2>
-            <p class="subheadline">The growth accelerator for law firms - leveraging tech, AI, and strategic expertise</p>
-            <div class="benefits-list">
-                <div class="benefit-row"><span class="benefit-icon gradient-icon">🚀</span><span>Reduce Agency Reliance</span></div>
-                <div class="benefit-row"><span class="benefit-icon gradient-icon">⚖️</span><span>Focus on Providing Expert Legal Services</span></div>
-                <div class="benefit-row"><span class="benefit-icon gradient-icon">💡</span><span>Eliminate the Risk of Burnout</span></div>
-                <div class="benefit-row"><span class="benefit-icon gradient-icon">📈</span><span>Improve Operational Efficiency</span></div>
-                <div class="benefit-row"><span class="benefit-icon gradient-icon">🤖</span><span>Integrate AI Into Your Marketing & Growth Operations</span></div>
-                <div class="benefit-row"><span class="benefit-icon gradient-icon">🎯</span><span>Leverage Cutting-Edge Legal Marketing Expertise</span></div>
-            </div>
-            <div class="final-line">
-                Finally, Adopt a Growth Strategy That Delivers With Repeatability
-            </div>
-        </section>
-        <!-- Right Content -->
-        <section class="split-right">
-            <div class="image-overlay"></div>
-            <div class="form-container">
-                <h3 class="cta-headline gradient-headline">Join the Waitlist</h3>
-                <div class="cta-subhead">Get early access and unlock the growth of your practice</div>
-                <button class="join-beta-btn" id="open-modal-btn">Join the Waitlist</button>
-                <p class="form-note">Have an invitation code? Click <a href="#" class="brand-link" id="open-invite-modal">here</a>.</p>
-            </div>
-            <svg class="growth-lines" width="100%" height="100%">
-                <line x1="10%" y1="90%" x2="90%" y2="10%" stroke="#ff416c" stroke-width="2" opacity="0.08"/>
-                <line x1="20%" y1="100%" x2="100%" y2="20%" stroke="#7748cd" stroke-width="2" opacity="0.08"/>
-                <line x1="0%" y1="80%" x2="80%" y2="0%" stroke="#d740a6" stroke-width="2" opacity="0.08"/>
-            </svg>
-        </section>
-    </div>
-    <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; 2024 Pioneerly. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="#" class="footer-link">Privacy Policy</a>
-                <a href="#" class="footer-link">Terms of Service</a>
-                <a href="mailto:hello@pioneerly.com" class="footer-link">Contact</a>
-            </div>
+  <header>
+    <section class="hero white-bg" id="hero">
+      <div class="container hero-flex hero-inner">
+        <div class="hero-content">
+          <img src="Scorechain.png" alt="Scorechain Logo" class="logo hero-logo" />
+          <h1>Stop Wasting Hours on Crypto Tracing. Get Instant Answers for Your Compliance Team.</h1>
+          <div class="subheadline">Flux Analysis by Scorechain gives AML managers at growing VASPs a single, unified view of suspicious fund flows across every major blockchain. Instantly see how close risky money is to your platform, so you can protect your business and satisfy regulators.</div>
+          <div class="hero-cta-row">
+            <input type="email" class="hero-email" placeholder="Work Email" required />
+            <button class="cta-btn">Get a 15-Minute Demo</button>
+          </div>
+          <div class="trust-indicator">Trusted by 350+ compliance teams since 2015</div>
         </div>
-    </footer>
-    <div id="modal-overlay" class="modal-overlay" style="display:none;">
-        <div class="modal">
-            <span class="modal-close" id="modal-close">&times;</span>
-            <h3>Join the Waitlist</h3>
-            <form id="modalForm" class="modal-form">
-                <input type="text" name="first_name" placeholder="First Name" required />
-                <input type="text" name="last_name" placeholder="Last Name" required />
-                <input type="text" name="position" placeholder="Position" required />
-                <input type="text" name="firm_name" placeholder="Firm's Name" required />
-                <input type="email" name="email" placeholder="Enter your email address" required />
-                <div style="display: flex; align-items: flex-start; margin: 0.5em 0 0.7em 0;">
-                    <input type="checkbox" id="gdpr-consent" name="gdpr_consent" required style="margin-right: 0.5em; margin-top: 0.2em;" />
-                    <label for="gdpr-consent" style="font-size: 0.97em; color: #eee; line-height: 1.4;">I agree to receive communications from Pioneerly and understand I can unsubscribe at any time.</label>
-                </div>
-                <button type="submit" class="join-beta-btn">Submit</button>
-            </form>
+        <!-- HERO section image -->
+        <div class="hero-image">
+          <img src="Scorechain_VASP.png" alt="Flux Analysis Screenshot" />
         </div>
-    </div>
+      </div>
+    </section>
+  </header>
 
-    <script src="script.js"></script>
+  <!-- Customer Logos Scrolling Section (now directly after hero) -->
+<section class="alt-section logos-bg">
+  <div class="container logos-section">
+    <h3 class="logos-heading">350+ COMPLIANCE & DIGITAL ASSET TEAMS TRUST US</h3>
+    <div class="logos-scroll">
+      <div class="logos-row">
+        <img src="https://placehold.co/120x40?text=NOTA+BENE" alt="NOTA BENE" />
+        <img src="https://placehold.co/120x40?text=TAURUS" alt="TAURUS" />
+        <img src="https://placehold.co/120x40?text=HAWK" alt="HAWK" />
+        <img src="https://placehold.co/120x40?text=CACEIS" alt="CACEIS" />
+        <img src="https://placehold.co/120x40?text=Regtank" alt="Regtank" />
+        <img src="https://placehold.co/120x40?text=BANQUE" alt="BANQUE" />
+        <img src="https://placehold.co/120x40?text=changelly" alt="changelly" />
+        <img src="https://placehold.co/120x40?text=OSL" alt="OSL" />
+        <img src="https://placehold.co/120x40?text=Caisse+des+Depots" alt="Caisse des Depots" />
+        <img src="https://placehold.co/120x40?text=paybis" alt="paybis" />
+        <img src="https://placehold.co/120x40?text=Thunes" alt="Thunes" />
+        <img src="https://placehold.co/120x40?text=NOTA+BENE" alt="NOTA BENE" />
+        <!-- Duplicate for seamless loop -->
+        <img src="https://placehold.co/120x40?text=NOTA+BENE" alt="NOTA BENE" />
+        <img src="https://placehold.co/120x40?text=TAURUS" alt="TAURUS" />
+        <img src="https://placehold.co/120x40?text=HAWK" alt="HAWK" />
+        <img src="https://placehold.co/120x40?text=CACEIS" alt="CACEIS" />
+        <img src="https://placehold.co/120x40?text=Regtank" alt="Regtank" />
+        <img src="https://placehold.co/120x40?text=BANQUE" alt="BANQUE" />
+        <img src="https://placehold.co/120x40?text=changelly" alt="changelly" />
+        <img src="https://placehold.co/120x40?text=OSL" alt="OSL" />
+        <img src="https://placehold.co/120x40?text=Caisse+des+Depots" alt="Caisse des Depots" />
+        <img src="https://placehold.co/120x40?text=paybis" alt="paybis" />
+        <img src="https://placehold.co/120x40?text=Thunes" alt="Thunes" />
+        <img src="https://placehold.co/120x40?text=NOTA+BENE" alt="NOTA BENE" />
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Section 1: Pain Points (light grey) -->
+<section class="alt-section light-bg">
+  <div class="container section-content left-text">
+    <div class="section-text">
+      <h2>Why Medium-Sized VASP Teams Struggle with Crypto Investigations</h2>
+      <ul>
+        <li><strong>Takes Forever:</strong> Your team juggles multiple blockchain explorers, copy-pastes addresses, and spends hours on each case, especially as your business keeps growing.</li><br>
+        <li><strong>Incomplete Picture:</strong> Cross-chain risks slip through the cracks, and you’re left with gaps in your audit trail.</li><br>
+        <li><strong>Regulatory Pressure:</strong> You’re expected to deliver answers in minutes, not hours, especially as your VASP scales and scrutiny increases.</li>
+      </ul>
+    </div>
+    <!-- Section 1 image (Pain Points Visual) -->
+    <div class="section-image">
+      <img src="67ea9ce7c84ffa57dc41c4e5_8v2.png" alt="Pain Points Visual" />
+    </div>
+  </div>
+</section>
+
+<!-- Section 2: Features/Icons (compact, distinct bg, icons) -->
+<section class="alt-section white-bg">
+  <div class="feature-icons">
+    <div class="feature-icon-block">
+      <div class="icon-circle">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="18" cy="18" r="18" fill="#00B2E3"/>
+          <g stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 22l8-8"/>
+            <rect x="8" y="20" width="8" height="8" rx="4"/>
+            <rect x="20" y="8" width="8" height="8" rx="4"/>
+          </g>
+        </svg>
+      </div>
+      <h3>Cross-Chain Fund Tracing</h3>
+      <p>No more manual blockchain hopping. Your team gets a complete, auditable history in seconds.</p>
+    </div>
+    <div class="feature-icon-block">
+      <div class="icon-circle">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="18" cy="18" r="18" fill="#00B2E3"/>
+          <g stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="18,10 21,18 29,18 22,22 25,30 18,25 11,30 14,22 7,18 15,18"/>
+          </g>
+        </svg>
+      </div>
+      <h3>Visual Connection Mapping</h3>
+      <p>Spot hidden risks and entity connections that matter for your compliance program.</p>
+    </div>
+    <div class="feature-icon-block">
+      <div class="icon-circle">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="18" cy="18" r="18" fill="#00B2E3"/>
+          <g stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18,10 22,18 18,18 20,26 14,18 18,18 16,10"/>
+          </g>
+        </svg>
+      </div>
+      <h3>Risk Distance Measurement</h3>
+      <p>Instantly know how close your platform is to darknet, mixer, or sanctioned funds, so you can act before issues escalate.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Section 3: Use Cases (Image left, text right, white bg) -->
+<section class="alt-section light-bg">
+  <div class="container section-content right-text">
+    <div class="section-image">
+      <!-- Section 3 image (Use Case Visual) -->
+      <img src="660553e8614bc94bdbfa1885_Scorechain - Entity information-p-500.png" alt="Entity Information Visual" />
+    </div>
+    <div class="section-text">
+      <h2>How Medium-Sized VASPs Use Flux Analysis to Stay Ahead</h2>
+      <ul>
+        <li><strong>Large Deposit Investigation:</strong> “A $500K deposit lands. Can we approve it?” With Flux Analysis, your team can confidently clear or block high-value transactions, with full documentation for auditors.</li><br>
+        <li><strong>Suspicious Activity Alert:</strong> “Our AML system flags a pattern. What’s the real risk?” Instantly visualize the fund flow and make informed decisions, even as your case volume grows.</li><br>
+        <li><strong>Regulatory Inquiry Response:</strong> “Regulator wants a 6-month-old trail. Can we deliver?” Provide complete, visual evidence in hours, not days, and show your VASP’s compliance maturity.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Section 4: Social Proof/Trust (compact, light bg) -->
+<section class="alt-section white-bg">
+  <div class="container section-content center-text">
+    <h2>Why AML Managers at Growing VASPs Trust Scorechain</h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Testimonial portrait" class="testimonial-portrait" />
+        <div class="testimonial-text">“Scorechain cut our investigation time from days to minutes. As our VASP grew, we needed a tool that could keep up.”</div>
+      </div>
+      <div class="testimonial">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Testimonial portrait" class="testimonial-portrait" />
+        <div class="testimonial-text">“Flux Analysis helped us catch a cross-chain risk we would have missed. This potentially saved us from a major compliance issue.”</div>
+      </div>
+    </div>
+    <div class="trust-elements">
+      <span><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f6e1.svg" alt="Shield icon" class="trust-icon" /> GDPR compliant, EU-hosted</span>
+      <span><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f465.svg" alt="Users icon" class="trust-icon" /> Used by 350+ compliance teams</span>
+      <span><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f512.svg" alt="Lock icon" class="trust-icon" /> Your data stays yours, we never mine or share</span>
+      <span><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f3c6.svg" alt="Award icon" class="trust-icon" /> 10+ years in blockchain compliance</span>
+    </div>
+  </div>
+</section>
+
+<!-- Section 5: Contact/CTA (two-column, soft bg) -->
+<section class="alt-section light-bg">
+  <div class="container contact-content">
+    <div class="contact-left">
+      <h2 class="contact-heading">See How Scorechain Can Empower Your AML Team</h2>
+      <ul>
+        <li><strong>Book a 15-Minute Demo Tailored to Your VASP</strong></li>
+      </ul>
+      <div class="customer-logos customer-logos-small">
+        <img src="https://placehold.co/100x36?text=VASP+1" alt="Customer 1" />
+        <img src="https://placehold.co/100x36?text=VASP+2" alt="Customer 2" />
+        <img src="https://placehold.co/100x36?text=VASP+3" alt="Customer 3" />
+      </div>
+    </div>
+    <div class="contact-right">
+      <div class="form-card form-card-padded">
+        <form class="demo-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name *</label>
+              <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name *</label>
+              <input type="text" id="lastName" name="lastName" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="company">Company Name *</label>
+              <input type="text" id="company" name="company" required>
+            </div>
+            <div class="form-group">
+              <label for="industry">Industry *</label>
+              <input type="text" id="industry" name="industry" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Work Email *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone *</label>
+              <input type="text" id="phone" name="phone" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="country">Country *</label>
+              <select id="country" name="country" required>
+                <option value="">Select one...</option>
+                <option value="France">France</option>
+                <option value="Luxembourg">Luxembourg</option>
+                <option value="UK">UK</option>
+                <option value="USA">USA</option>
+                <!-- Add more countries as needed -->
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="interest">Interest *</label>
+            <div class="interest-buttons">
+              <button type="button">Wallet and Transaction Screening</button>
+              <button type="button">Predictive Alerts</button>
+              <button type="button">Exploration Tool</button>
+              <button type="button">KYA/KYT Reports</button>
+              <button type="button">VASP Risk Assessment</button>
+              <button type="button">API Integration</button>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="extra">Extra Info</label>
+            <textarea id="extra" name="extra" placeholder="Write us any relevant extra information"></textarea>
+          </div>
+          <div class="form-row">
+            <button class="cta-btn" type="submit" style="text-align: center; width: 100%;">Request a demo</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Minimized Footer -->
+<footer class="footer-min">
+  <div class="footer-min-inner">
+    <img src="Scorechain.png" alt="Scorechain Logo" class="footer-logo" />
+    <span>© 2025 Scorechain. Made in Europe</span>
+  </div>
+</footer>
+
 </body>
 </html> 
